@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+body {
+    background-color: #313E61;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main { 
+	text-align: center; 
+} 
+
+h1 { 
+	color: #81ABBC; 
+    font-size: 36px;
+} 
+
+.turns {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin: 20px 0;
+}
+
+.turn {
+    font-size: 42px;
+    margin: 5px;
+    padding: 5px;
+    width: 70px;
+    height: 70px;
+    border: solid 2px #81ABBC;
+    color: #81ABBC;
+    border-radius: 10px;
+}
+
+.container { 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+} 
+
+.row { 
+	display: flex; 
+} 
+
+.cell { 
+    background-color: #fbd2c9c0;
+    color: #313E61;
+	border: none; 
+    border-radius: 8px;
+	width: 100px; 
+	height: 100px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+    margin: 2px;
+	font-size: 40px; 
+	text-align: center; 
+	cursor: pointer; 
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+.cell:active { 
+	outline: none; 
+} 
+
+/* button */
+#btn { 
+    background-color: #313E61;
+	box-sizing: border-box; 
+	border: 1px solid #81ABBC;
+    margin-top: 30px;
+    padding: 5px 25px;
+	border-radius: 8px; 
+	color: #81ABBC; 
+	font-size: 28px; 
+	cursor: pointer; 
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+#btn:hover {
+    background-color: #81ABBC;
+    color: #313E61;
+}

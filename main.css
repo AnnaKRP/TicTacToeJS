@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
 body {
-    background-color: #313E61;
+    background-color: #4C3957;
     font-family: "Agbalumo", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -12,8 +12,10 @@ body {
 } 
 
 h1 { 
-	color: #81ABBC; 
-    font-size: 36px;
+	color: #79B473; 
+    font-size: 38px;
+    border-bottom: double 5px #79B473;
+    padding-bottom: 10px;
 } 
 
 .turns {
@@ -29,9 +31,13 @@ h1 {
     padding: 5px;
     width: 70px;
     height: 70px;
-    border: solid 2px #81ABBC;
-    color: #81ABBC;
+    border: solid 2px #79B473;
+    color: #79B473;
     border-radius: 10px;
+}
+
+#turnX {
+    background-color: #7ab47383;
 }
 
 .container { 
@@ -46,7 +52,7 @@ h1 {
 
 .cell { 
     background-color: #fbd2c9c0;
-    color: #313E61;
+    color: #4C3957;
 	border: none; 
     border-radius: 8px;
 	width: 100px; 
@@ -69,13 +75,13 @@ h1 {
 
 /* button */
 #btn { 
-    background-color: #313E61;
+    background-color: #4C3957;
 	box-sizing: border-box; 
-	border: 1px solid #81ABBC;
+	border: 1px solid #79B473;
     margin-top: 30px;
     padding: 5px 25px;
 	border-radius: 8px; 
-	color: #81ABBC; 
+	color: #79B473; 
 	font-size: 28px; 
 	cursor: pointer; 
     font-family: "Agbalumo", system-ui;
@@ -84,6 +90,27 @@ h1 {
 } 
 
 #btn:hover {
-    background-color: #81ABBC;
-    color: #313E61;
+    background-color: #79B473;
+    color: #4C3957;
+}
+
+#print {
+    position: absolute;
+    font-size: 36px;
+    background-color: #7ab473d5;
+    color: #4C3957;
+    padding: 10px;
+    border-radius: 7px;
+    width: 90%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
